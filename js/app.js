@@ -1,11 +1,11 @@
 
-"use strick"
+"use strict"
 const push = document.querySelector('#push'),
 newTaskInput = document.querySelector('#newtask input'),
 task = document.querySelector('#tasks');
 
 push.onclick = function(){
-    const prob = newTaskInput.value.replaceAll(" ",'')
+    const prob = newTaskInput.value.trim();
     if(prob.length == 0 ){
         alert("Ma'lumot kiritilmagan!!!!")
     }
