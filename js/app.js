@@ -5,8 +5,7 @@ newTaskInput = document.querySelector('#newtask input'),
 task = document.querySelector('#tasks');
 
 push.onclick = function(){
-    const prob = newTaskInput.value.trim();
-    if(prob.length == 0 ){
+    if(newTaskInput.value == 0 ){
         alert("Ma'lumot kiritilmagan!!!!")
     }
 
